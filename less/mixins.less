@@ -1,0 +1,21 @@
+// mixins
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+// parametric mixins
+.opacity(@value) {
+    opacity: @value;
+}
+
+.btn(@borderRadius, @color, @fontSize, @width, @height) {
+    color: @color;
+    font-size: @fontSize;
+    width: @width;
+    height: @height;
+    border-radius: @borderRadius;
+}

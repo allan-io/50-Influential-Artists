@@ -1,0 +1,71 @@
+// container
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+
+        @media @mobile {
+            width: 95%;
+        }
+}
+
+// header img
+
+.title-container {
+    .center();
+
+    img {
+        width: 95%;
+        opacity: .8;
+        margin: 0 auto;
+    }
+}
+
+hr {
+    margin: 1.5rem 0;
+}
+
+.artists-container {
+    display: flex;
+
+        @media @mobile {
+            flex-direction: column;
+        }
+}
+
+.artist {
+    // flex: 2;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+
+    img {
+        border-radius: .5rem;
+        width: 80%;
+        max-width: 80%;
+        padding-top: 0;
+        opacity: 1;
+    }
+
+    img:hover {
+        opacity: .8;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 300;
+        margin: 1rem;
+    }
+
+    .bio {
+        margin: 2rem 2rem;
+    }
+
+}
